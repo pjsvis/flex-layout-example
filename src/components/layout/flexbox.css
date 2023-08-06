@@ -1,0 +1,66 @@
+:root {
+  --primary: purple; /* accessible everywhere */
+  --secondary: rgb(248, 28, 248); /* accessible everywhere */
+  --total-height: 99.999vh;
+  --total-width: 99.999vw;
+  --margin-bottom: 0px;
+  --border:  border: 0px solid black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: var(--total-height);
+  width: var(--total-width);
+  /* Ensure zero padding and margins in this container */
+  padding: 0;
+  margin:0;
+}
+
+.title-bar {
+  height: auto;
+  width: var(--total-width);
+  background-color:var(--primary);
+  border: var(--border);
+  margin-bottom:  var(--margin-bottom);
+  color: white;
+}
+/* Add margins and padding here */
+title-bar-container{padding: 1em;}
+
+.button-bar {
+  height: auto;
+  width: var(--total-width);
+  background-color: darkgray;
+  border: var(--border);
+  margin-bottom:  var(--margin-bottom);
+}
+button-bar-container{padding: 1em;}
+
+.main-area {
+  /* Set the min-area element to grow and stretch */
+  flex-grow: 1; 
+  background-color: silver;
+  width: var(--total-width);
+  border: var(--border);
+  margin-bottom:  var(--margin-bottom);
+  overflow-y:auto;
+  min-height:100px;
+}
+main-area-container{padding: 1em;}
+
+.footer-bar {
+  height: auto;
+  width: var(--total-width);
+  background-color: var(--secondary);
+  border: var(--border);
+  color: white;
+}
+footer-bar-container{padding: 1em;}

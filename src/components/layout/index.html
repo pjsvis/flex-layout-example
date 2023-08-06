@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./flexbox.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-bar">
+        <div style="padding: 1em">Title Bar</div>
+
+        <div class="button-bar">
+          <div style="padding: 0.5em">
+            <button>File</button>
+            <button>Edit</button>
+            <button>About</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div style="display: flex; padding: 1em">
+          <div>
+            <h2>Main Section</h2>
+
+            <p>
+              The key to getting the layout stable is to do the padding after
+              you have done the layout.
+            </p>
+            <p>
+              Setting width and height to 99.999vh/vw gets the container flush
+              with the edges of the browser window..
+            </p>
+          </div>
+          <div>
+            <h2>Next Section</h2>
+            <p>
+              The key to getting the layout stable is to do the padding after
+              you have done the layout.
+            </p>
+            <p>
+              This is because the padding is added to the width of the element.
+              If you do the padding first, then the width of the element will be
+              too wide and the layout will break.
+            </p>
+          </div>
+          <div>
+            <h2>Last Section</h2>
+            <p>
+              The key to getting the layout stable is to do the padding after
+              you have done the layout.
+            </p>
+            <p>
+              This is because the padding is added to the width of the element.
+              If you do the padding first, then the width of the element will be
+              too wide and the layout will break.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div style="padding: 1em">Footer</div>
+      </div>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>
